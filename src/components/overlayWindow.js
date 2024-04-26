@@ -23,15 +23,17 @@ export function Overlay({ isOpen, onClose }) {
     });
   };
 
-  const [state, handleSubmit] = useForm("mrgnrwrj");
-  if (state.succeeded) {
-    return <p>Succes</p>
-  }
-
-  
   const showAlert = () => {
     alert('Привет, мир!');
   };
+
+  const [state, handleSubmit] = useForm("mrgnrwrj");
+  if (state.succeeded) {
+    return showAlert;
+  }
+
+  
+  
 
   return (
     <Fragment>
