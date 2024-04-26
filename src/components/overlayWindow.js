@@ -1,5 +1,3 @@
-
-
 import React, { Fragment, useState } from "react";
 import Photo from './img/qrcode.png';
 import { useForm, ValidationError } from '@formspree/react';
@@ -15,7 +13,6 @@ export function Overlay({ isOpen, onClose }) {
     socialLink: "",
     agree: false
   });
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -23,17 +20,40 @@ export function Overlay({ isOpen, onClose }) {
     });
   };
 
-  const showAlert = () => {
-    alert('Привет, мир!');
+  const [state, handleSubmit] = useForm("mrgnrwrj");
+
+  const validateForm = () => {
+    // Проверка на заполненность всех полей
+    for (const key in formData) {
+      if (formData.hasOwnProperty(key) && !formData[key]) {
+        return false;
+      }
+    }
+
+    // Проверка формата электронной почты
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      return false;
+    }
+
+    // Другие проверки формата данных, например, для номера телефона, ссылки и т. д.
+
+    return true;
   };
 
-  const [state, handleSubmit] = useForm("mrgnrwrj");
-  if (state.succeeded) {
-    return showAlert;
-  }
+  const manageSubmit = (e) => {
+    e.preventDefault();
 
-  
-  
+    // Если форма прошла валидацию, отправляем данные
+    if (validateForm()) {
+      handleSubmit(e);
+      if (state.succeeded) {
+        window.location.reload();
+      }
+    } else {
+      alert("Пожалуйста, заполните все поля правильно.");
+    }
+  };
 
   return (
     <Fragment>
@@ -49,14 +69,14 @@ export function Overlay({ isOpen, onClose }) {
               />
             </div>
             <div className="formAndQrcode">
-              <form className="formDiv" onSubmit={handleSubmit}>
+              <form id="formId" className="formDiv" onSubmit = {manageSubmit}>
                 <label>
                   <input 
                     className="inputText" 
                     placeholder="Электронная почта" 
-                    htmlFor="email"
                     name="email"
                     type="email"
+                    id="Email"
                     value={formData.email}
                     onChange={handleChange}
                   />
@@ -70,15 +90,15 @@ export function Overlay({ isOpen, onClose }) {
                   <input 
                     className="inputText" 
                     placeholder="ФИО" 
-                    name="fullname"
+                    name="fullName"
                     id="fullname"
                     type="text"
-                    value={formData.fullname}
+                    value={formData.fullName}
                     onChange={handleChange}
                   />
                   <ValidationError 
-                    prefix="fullname" 
-                    field="fullname"
+                    prefix="fullName" 
+                    field="fullName"
                     errors={state.errors}
                   />
                 </label>
@@ -97,21 +117,21 @@ export function Overlay({ isOpen, onClose }) {
                     field="groupNumber"
                     errors={state.errors}
                   />
-                  
                 </label>
                 <label>
                   <input 
                     className="inputText" 
                     placeholder="Телефон" 
-                    name="Телефон"
-                    id="phoneNumber"
-                    type="text"
-                    value={formData.phoneNumber}
+                    name="phone"
+                    id="phone"
+                    type="tel"
+                    // pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+                    value={formData.phone}
                     onChange={handleChange}
                   />
                   <ValidationError 
-                    prefix="phoneNumber" 
-                    field="Телефон"
+                    prefix="phone" 
+                    field="phone"
                     errors={state.errors}
                   />
                 </label>
@@ -133,22 +153,21 @@ export function Overlay({ isOpen, onClose }) {
                 </label>
                 <label>
                   <input 
-                    name="согласен" 
+                    name="agree" 
                     id="agree"
                     type="checkbox" 
                     checked={formData.agree}
                     onChange={() => setFormData({ ...formData, agree: !formData.agree })}
                   />
-                  Я согласен(на) на обработку персональных данных
-                </label>
-                <ValidationError 
+                  <ValidationError 
                     prefix="agree" 
-                    field="согласия"
+                    field="agree"
                     errors={state.errors}
                   />
-                <button className="inputButton" type="submit" disabled={state.submitting}>
-                Отправить
-                </button>
+                  Я согласен(на) на обработку персональных данных
+                  
+                </label>
+                <input className="inputButton" type="submit" value="Отправить" />
               </form>
               <div className="DivForQrcode">
                 <h4>Подписывайся на наш Telegram канал!</h4>
