@@ -23,20 +23,17 @@ export function Overlay({ isOpen, onClose }) {
   const [state, handleSubmit] = useForm("mrgnrwrj");
 
   const validateForm = () => {
-    // Проверка на заполненность всех полей
+
     for (const key in formData) {
       if (formData.hasOwnProperty(key) && !formData[key]) {
         return false;
       }
     }
 
-    // Проверка формата электронной почты
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       return false;
     }
-
-    // Другие проверки формата данных, например, для номера телефона, ссылки и т. д.
 
     return true;
   };
@@ -44,7 +41,6 @@ export function Overlay({ isOpen, onClose }) {
   const manageSubmit = (e) => {
     e.preventDefault();
 
-    // Если форма прошла валидацию, отправляем данные
     if (validateForm()) {
       handleSubmit(e);
       if (state.succeeded) {
@@ -70,6 +66,11 @@ export function Overlay({ isOpen, onClose }) {
             </div>
             <div className="formAndQrcode">
               <form id="formId" className="formDiv" onSubmit = {manageSubmit}>
+                <label>
+                  <h2 className="titleform">
+                  Записывайся в проект!
+                  </h2>
+                </label>
                 <label>
                   <input 
                     className="inputText" 
@@ -151,8 +152,9 @@ export function Overlay({ isOpen, onClose }) {
                     errors={state.errors}
                   />
                 </label>
-                <label>
+                <label className="agreeText">
                   <input 
+
                     name="agree" 
                     id="agree"
                     type="checkbox" 
@@ -170,8 +172,8 @@ export function Overlay({ isOpen, onClose }) {
                 <input className="inputButton" type="submit" value="Отправить" />
               </form>
               <div className="DivForQrcode">
+                <img src={Photo} width={220} height={211} alt="QR-код"/>
                 <h4>Подписывайся на наш Telegram канал!</h4>
-                <img src={Photo} alt="QR-код"/>
               </div>
             </div>
           </div>

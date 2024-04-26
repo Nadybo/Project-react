@@ -34,7 +34,7 @@ body {
   font-size: 100px;
 }
 
-@media  (min-width: 350px) and (max-width: 440px) {
+@media  (min-width: 320px) and (max-width: 480px) {
   .SuzBoshi{
     font-size: 30px;
     margin: 20px;
@@ -62,7 +62,7 @@ body {
   width:422px;
    height:411.2px;
 }
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .homeDiv .photo{
     margin-top: 20px;
     width:322px;
@@ -88,7 +88,7 @@ body {
   border: 1px solid #2BA18B;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .homeDiv .submitButton{
     margin-top: 100px;
     padding: 20px;
@@ -108,7 +108,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .beforeHomepage{
     height: fit-content;
   }
@@ -121,7 +121,7 @@ body {
   font-weight: bold;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .beforeHomepage h1{
     font-size: 25px;
   }
@@ -135,7 +135,7 @@ body {
   justify-items: center;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .beforeHomepage .row{
     display: flex;
     flex-direction: column;
@@ -184,7 +184,7 @@ body {
   font-weight: bold;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .SkillsDiv h1{
     font-size: 25px;
   }
@@ -196,7 +196,7 @@ body {
   font-weight: 400;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .SkillsDiv li{
     font-size: 20px;
   }
@@ -222,7 +222,7 @@ body {
   border: 1px solid white;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .SkillsDiv .submitButton{
     width: 218px;
     height: 57px;
@@ -244,7 +244,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .StepsDiv{
     height: fit-content;
   }
@@ -252,12 +252,12 @@ body {
 
 .StepsDiv h1{
   margin-bottom: 50px;
-  color: #2BA18B;
+  color: #7ABC93;
   font-size: 50px;
   font-weight: bold;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .StepsDiv h1{
     font-size: 25px;
     margin-bottom: 0;
@@ -266,12 +266,12 @@ body {
 }
 
 .StepsDiv h3{
-  color: #2BA18B;
+  color: #7ABC93;
   font-size: 30px;
   margin: 20px 0 30px 0;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .StepsDiv h3{
     font-size: 20px;
   }
@@ -289,7 +289,7 @@ body {
   display: flex;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .StepsDiv .row{
     flex-direction: column;
   }
@@ -313,14 +313,14 @@ body {
   transition: box-shadow 0.5ms ease;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .StepsDiv .inside{
     height: fit-content;
   }
 }
 
 .StepsDiv .inside:hover{
-  box-shadow: 0px 0px 30px #2BA18B;
+  box-shadow: 0px 0px 30px #7ABC93;
   cursor: pointer;
 }
 
@@ -334,7 +334,7 @@ body {
   font-size: 25px;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .StepsDiv .inside h4{
     margin: 10px 0 20px 0;
   font-size: 18px;
@@ -361,7 +361,7 @@ body {
   border: 1px solid #2BA18B;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .StepsDiv button{
     width: 218px;
     height: 57px;
@@ -381,7 +381,7 @@ body {
   justify-content: space-between;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .processDiv {
     height: fit-content;
     flex-direction: column;
@@ -397,7 +397,7 @@ body {
 
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .processDiv h1{
     font-size: 25px;
   margin: 20px 0 20px 0;
@@ -413,7 +413,7 @@ body {
 
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .processDiv li{
     margin-bottom: 50px;
     font-size: 20px;
@@ -425,7 +425,7 @@ body {
   margin-top: 120px;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .processDiv img{
     display: none;
   }
@@ -443,7 +443,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .AboutUsDiv{
     height: fit-content;
   }
@@ -455,7 +455,7 @@ body {
   font-size: 50px;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .AboutUsDiv h1{
     color: #2BA18B;
     margin-top: 50px;
@@ -472,7 +472,7 @@ body {
   justify-content:space-around;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .AboutUsDiv .mapAndAbout{
     flex-direction: column;
     margin: 50px;
@@ -489,7 +489,7 @@ body {
   height: 600px;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .AboutUsDiv .mapDiv{
     width: 400px;
     height: 300px;
@@ -507,7 +507,7 @@ body {
 
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .AboutUsDiv p{
     position: relative;
     margin-top: 30px;
@@ -540,8 +540,8 @@ body {
 footer{
   width: 100%;
   height: 190px;
-  background-image: url(/src/img/homepage.png);
-  /* background-color: #C9C9C9; */
+  /* background-image: url(/src/img/homepage.png); */
+  background-color: #7ABC93;
 
   display: flex;
   align-items: center;
@@ -554,7 +554,7 @@ footer img{
   height: 50px;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   footer img{
     margin: 10px;
     cursor: pointer;
@@ -591,6 +591,7 @@ footer img:hover{
 }
 
 .formDiv input{
+  font-size: 18px;
   margin: 20px;
 }
 
@@ -600,10 +601,11 @@ footer img:hover{
   border-radius: 10px;
 }
 
-@media (min-width: 350px) and (max-width: 440px){
+@media  (min-width: 320px) and (max-width: 480px) {
   .formDiv .inputText{
+    font-size: 14px;
     padding: 10px;
-    width: 200px;
+    width: 300px;
     border-radius: 10px;
   }
   
@@ -617,17 +619,31 @@ footer img:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-align: center;
 }
 
 .formAndQrcode .DivForQrcode{
   width: 100%;
   height: 100%;
- /* background-color: #10443a; */
-  /* border-radius: 10px; */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+@media  (min-width: 320px) and (max-width: 480px) {
+  .formAndQrcode .DivForQrcode{
+    display: none;
+  }
+  
+}
+.formAndQrcode .DivForQrcode h4{
+  font-weight: 300;
+}
+
+@media  (min-width: 320px) and (max-width: 480px) {
+  .formDiv .agreeText{
+    font-size: 12px;
+  }
 }
 
 .overlay .inputButton{
@@ -637,6 +653,17 @@ footer img:hover{
   border: none;
   background-color: #2BA18B;
   color: white;
+}
+
+@media  (min-width: 320px) and (max-width: 480px) {
+  .overlay .inputButton{
+  padding: 10px;
+  width: 324px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2BA18B;
+  color: white;
+  }
 }
 
 .overlay .inputButton:hover{
@@ -654,13 +681,21 @@ footer img:hover{
   left: 0;
   margin: auto;
   z-index: 10;
-  padding: 30px;
+  padding: 20px;
   width: 900px;
   height: fit-content;
-  border-radius: 30px;
+  border-radius: 20px;
 
   display: flex;
   flex-direction: column;
+}
+
+@media  (min-width: 320px) and (max-width: 480px) {
+  .overlay__container{
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+  }
 }
 
 
@@ -670,9 +705,11 @@ footer img:hover{
 }
 
 .overlay__close {
+  display: flex;
+  float: right;
   border: none;
   background-color: transparent;
-  font-size: 36px;
+  font-size: 30px;
   cursor: pointer;
 }
 

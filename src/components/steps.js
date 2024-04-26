@@ -1,6 +1,16 @@
 import React from "react"
+import data from "./data/file.pptx"
 
 class Steps extends React.Component{
+  downloadFile = () => {
+    const url = data; 
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Мой Дом'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
     render(){
       return(
         <div className="StepsDiv">
@@ -46,7 +56,7 @@ class Steps extends React.Component{
               </div>
             </div>
           </div>
-          <button>ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+          <button onClick={this.downloadFile}>ПОДРОБНЕЕ О ПРОЕКТЕ</button>
         </div>
       )
     }
