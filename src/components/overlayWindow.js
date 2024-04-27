@@ -1,10 +1,6 @@
 import React, { Fragment, useState } from "react";
 import Photo from './img/qrcode.png';
 import { useForm, ValidationError } from '@formspree/react';
-import telegram from 'D:/website/src/components/icons/telegram.svg';
-import mail from 'D:/website/src/components/icons/mail-svgrepo-com.svg';
-import discort from 'D:/website/src/components/icons/discord-svgrepo-com.svg';
-import vk from 'D:/website/src/components/icons/vk-svgrepo-com.svg';
 
 
 export function Overlay({ isOpen, onClose }) {

@@ -14,7 +14,7 @@ body {
 .homeDiv {
   width: 100%;
   height: 870px;
-  background-image: url("/src/img/homepage.png"); /* Поправил путь к изображению */
+  background-image: url("/src/img/homepage.png");
 }
 
 
@@ -171,11 +171,10 @@ body {
 
 /* skills */
 .SkillsDiv{
-  height: 800px;
+  height: fit-content;
   background-color: #2BA18B;
   display: flex;
   flex-direction: column;
-
 }
 
 .SkillsDiv h1{
@@ -191,7 +190,7 @@ body {
 }
 
 .SkillsDiv li{
-  margin:50px 0 0 80px ;
+  margin:50px 0 0 50px ;
   font-size: 35px;
   font-weight: 400;
 }
@@ -205,7 +204,7 @@ body {
 .SkillsDiv .submitButton{
   width: 357px;
   height: 89px;
-  margin:80px 0 0 40%;
+  margin:80px 0 50px 40%;
   color: #2BA18B;
   background-color: white;
   padding: 20px;
@@ -227,7 +226,7 @@ body {
     width: 218px;
     height: 57px;
     font-size: 15px;
-    margin:80px 0 0 25%;
+    margin:80px 0 50px 25%;
   }
 }
 
@@ -305,7 +304,7 @@ body {
 }
 
 .StepsDiv .inside{
-  height: 600px;
+  height: fit-content;
   padding: 10px;
   background-color: #7ABC93;
   border-radius: 20px;
@@ -367,7 +366,7 @@ body {
     height: 57px;
     padding: 10px;
     font-size: 15px;
-    margin:50px 0 50px 25%;
+    margin:50px 0 50px 23%;
   }
 }
 
@@ -480,7 +479,7 @@ body {
 }
 
 .AboutUsDiv .mapDiv{
-  width: 800px;
+  width: 600px;
   height: 600px;
 }
 
@@ -491,12 +490,57 @@ body {
 
 @media  (min-width: 320px) and (max-width: 480px) {
   .AboutUsDiv .mapDiv{
-    width: 400px;
+    width: 350px;
     height: 300px;
   }
   .AboutUsDiv .mapsize{
     height: 300px;
   }
+}
+
+.AboutUsDiv form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutUsDiv form input{
+  border: 1px solid #2BA18B;
+}
+
+.AboutUsDiv .titleform{
+  color: #2BA18B;
+}
+
+@media  (min-width: 320px) and (max-width: 480px) {
+  .AboutUsDiv form{
+    margin-top: 50px;
+  }
+}
+
+.AboutUsDiv .inputButton{
+  padding: 10px;
+  width: 424px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2BA18B;
+  color: white;
+}
+
+@media  (min-width: 320px) and (max-width: 480px) {
+  .AboutUsDiv .inputButton{
+  padding: 10px;
+  width: 324px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2BA18B;
+  color: white;
+  }
+}
+
+.AboutUsDiv .inputButton:hover{
+  background-color: #10443a;
+  color: white;
 }
 
 .AboutUsDiv p{
@@ -566,7 +610,7 @@ footer .icons{
 }
 
 footer .icons:hover{
-  color: black;
+  color: #7ABC93;
   background-color: white;
 }
 
@@ -646,10 +690,10 @@ footer .icons:hover{
 }
 
 
-.DivForQrcode .icons:hover{
+/* .DivForQrcode .icons:hover{
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
-}
+} */
 
 
 
@@ -697,7 +741,7 @@ footer .icons:hover{
 
 .overlay__container {
   color: #000000;
-  background-color: rgba(236, 236, 236, 0.976);
+  background-color: rgba(255, 255, 255, 0.976);
   position: fixed;
   top: 0;
   right: 0;
@@ -735,6 +779,12 @@ footer .icons:hover{
   background-color: transparent;
   font-size: 30px;
   cursor: pointer;
+}
+
+@media  (min-width: 320px) and (max-width: 480px) {
+  .overlay__close{
+    float: left;
+  }
 }
 
 

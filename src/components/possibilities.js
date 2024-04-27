@@ -1,10 +1,10 @@
 import React from "react"
-import Photo1 from "D:/website/src/components/img/item1.png"
-import Photo2 from "D:/website/src/components/img/item2.png"
-import Photo3 from "D:/website/src/components/img/item3.png"
-import Photo4 from "D:/website/src/components/img/item4.png"
-import Photo5 from "D:/website/src/components/img/item5.png"
-import Photo6 from "D:/website/src/components/img/item6.png"
+import Photo1 from "./img/item1.png"
+import Photo2 from "./img/item2.png"
+import Photo3 from "./img/item3.png"
+import Photo4 from "./img/item4.png"
+import Photo5 from "./img/item5.png"
+import Photo6 from "./img/item6.png"
 class Possibilities extends React.Component{
     render(){
       return(

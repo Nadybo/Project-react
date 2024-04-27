@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Photo from 'D:/website/src/components/img/phones.png';
+import Photo from './img/phones.png';
 import Overlay from "./overlayWindow";
 
 class Home extends Component {

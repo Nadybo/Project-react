@@ -1,5 +1,5 @@
 import React from "react"
-import Photo from 'D:/website/src/components/img/phones.png';
+import Photo from './img/phones.png';
 
 class Process extends React.Component{
     render(){
