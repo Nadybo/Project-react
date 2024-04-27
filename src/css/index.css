@@ -346,7 +346,7 @@ body {
   height: 89px;
   margin:80px 0 0 40%;
   color: white;
-  background-color: #2BA18B;
+  background-color: #7ABC93;
   padding: 20px;
   border-radius: 50px;
   border: none;
@@ -358,7 +358,7 @@ body {
 .StepsDiv button:hover{
   color:#2BA18B ;
   background-color: white;
-  border: 1px solid #2BA18B;
+  border: 1px solid #7ABC93;
 }
 
 @media  (min-width: 320px) and (max-width: 480px) {
@@ -547,27 +547,27 @@ footer{
   align-items: center;
   justify-content: space-evenly;
 }
-footer img{
+footer .icons{
+  color: white;
   margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
 }
 
+
 @media  (min-width: 320px) and (max-width: 480px) {
-  footer img{
+  footer .icons{
     margin: 10px;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
   }
   
 }
 
-footer img:hover{
-  margin-bottom: 20px;
-  /* box-shadow: 0px 10px 0px 0px #2BA18B; */
-  /* transition: box-shadow 0.3s ease; */
+footer .icons:hover{
+  color: black;
+  background-color: white;
 }
 
 
@@ -630,6 +630,29 @@ footer img:hover{
   flex-direction: column;
   justify-content: center;
 }
+
+
+.DivForQrcode .icons{
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.DivForQrcode .iconsDiv{
+  margin-top: 100px;
+}
+
+
+.DivForQrcode .icons:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+
+
 @media  (min-width: 320px) and (max-width: 480px) {
   .formAndQrcode .DivForQrcode{
     display: none;
@@ -638,6 +661,7 @@ footer img:hover{
 }
 .formAndQrcode .DivForQrcode h4{
   font-weight: 300;
+  margin-top: 20px;
 }
 
 @media  (min-width: 320px) and (max-width: 480px) {
@@ -673,7 +697,7 @@ footer img:hover{
 
 .overlay__container {
   color: #000000;
-  background-color: rgba(255, 255, 255, 0.976);
+  background-color: rgba(236, 236, 236, 0.976);
   position: fixed;
   top: 0;
   right: 0;

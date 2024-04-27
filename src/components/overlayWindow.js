@@ -1,6 +1,10 @@
 import React, { Fragment, useState } from "react";
 import Photo from './img/qrcode.png';
 import { useForm, ValidationError } from '@formspree/react';
+import telegram from 'D:/website/src/components/icons/telegram.svg';
+import mail from 'D:/website/src/components/icons/mail-svgrepo-com.svg';
+import discort from 'D:/website/src/components/icons/discord-svgrepo-com.svg';
+import vk from 'D:/website/src/components/icons/vk-svgrepo-com.svg';
 
 
 export function Overlay({ isOpen, onClose }) {
@@ -44,6 +48,7 @@ export function Overlay({ isOpen, onClose }) {
     if (validateForm()) {
       handleSubmit(e);
       if (state.succeeded) {
+          // alert("Успешно отправлено");
         window.location.reload();
       }
     } else {
@@ -173,7 +178,13 @@ export function Overlay({ isOpen, onClose }) {
               </form>
               <div className="DivForQrcode">
                 <img src={Photo} width={220} height={211} alt="QR-код"/>
-                <h4>Подписывайся на наш Telegram канал!</h4>
+                <h4>Подписывайся на наш <br/>Telegram канал!</h4>
+                <div className="iconsDiv">
+                <a href="https://t.me/my_moshome" className="icons" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:info@myhomemos.ru?subject=Хочу вступить в команду&body=Здравствуйте, команда Мой Дом," className="icons"><i class="far fa-envelope"></i></a>
+                <a href="https://github.com/Nadybo/Flutter2.0.git" className="icons"><i class="fab fa-github"></i></a>
+                <a href="https://vk.com/mpoly_project" className="icons"><i class="fab fa-vk"></i></a>
+                  </div>
               </div>
             </div>
           </div>
